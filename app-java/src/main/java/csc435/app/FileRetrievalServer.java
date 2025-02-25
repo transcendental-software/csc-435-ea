@@ -2,7 +2,7 @@ package csc435.app;
 
 public class FileRetrievalServer
 {
-    public static void main( String[] args )
+    public static void main(String[] args)
     {
         // TO-DO change server port to a non-privileged port from args[0]
         int serverPort = 1;

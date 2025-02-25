@@ -45,8 +45,7 @@ public class ClientProcessingEngine {
         IndexResult result = new IndexResult(0.0, 0);
         // TO-DO get the start time
         // TO-DO crawl the folder path and extrac all file paths
-        // TO-DO for each file extract all alphanumeric terms that are larger than 2 characters
-        //       and count their frequencies
+        // TO-DO for each file extract all words/terms and count their frequencies
         // TO-DO increment the total number of bytes read
         // TO-DO for each file prepare an INDEX REQUEST message and send to the server
         //       the document path, the client ID and the word frequencies
@@ -68,9 +67,16 @@ public class ClientProcessingEngine {
         return result;
     }
 
+    public long getInfo() {
+        // TO-DO return the client ID
+
+        return 0;
+    }
+
     public void connect(String serverIP, String serverPort) {
         // TO-DO initialize the ZMQ context
         // TO-DO create the request socket and connect it to the server
+        // send a REGISTER request message and receive a REGISTER reply message with the client ID
     }
 
     public void disconnect() {

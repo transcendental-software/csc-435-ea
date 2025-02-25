@@ -36,6 +36,8 @@ class ClientProcessingEngine {
         IndexResult indexFolder(std::string folderPath);
         
         SearchResult search(std::vector<std::string> terms);
+
+        long getInfo();
         
         void connect(std::string serverIP, std::string serverPort);
         

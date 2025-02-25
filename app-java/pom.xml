@@ -9,7 +9,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>file-retrieval-engine</name>
-  <description>Java ZeroMQ Client-Server File Retrieval Engine</description>
+  <description>Java ZeroMQ File Retrieval Engine</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

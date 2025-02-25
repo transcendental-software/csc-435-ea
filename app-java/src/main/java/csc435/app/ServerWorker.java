@@ -17,6 +17,8 @@ public class ServerWorker implements Runnable {
     public void run() {
         // TO-DO create a reply socket and connect it to the dealer
         // TO-DO receive a message from the client
+        // TO-DO if the message is a REGISTER REQUEST, then
+        //       generate a new client ID and return a REGISTER REPLY message containing the client ID
         // TO-DO if the message is an INDEX REQUEST, then
         //       extract the document path, client ID and word frequencies from the message(s)
         //       get the document number associated with the document path (call putDocument)

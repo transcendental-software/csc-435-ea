@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 
 project(file-retrieval-engine
         VERSION 1.0
-        DESCRIPTION "C++ ZeroMQ Client-Server File Retrieval Engine"
+        DESCRIPTION "C++ ZeroMQ File Retrieval Engine"
         LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 23)
@@ -13,8 +13,8 @@ add_executable(file-retrieval-server
                src/ServerAppInterface.cpp
                src/ServerProcessingEngine.cpp
                src/IndexStore.cpp)
-target_link_libraries(file-retrieval-client zmq)
-target_include_directories(file-retrieval-client PUBLIC include)
+target_link_libraries(file-retrieval-server zmq)
+target_include_directories(file-retrieval-server PUBLIC include)
 
 add_executable(file-retrieval-benchmark
                src/file-retrieval-benchmark.cpp
@@ -26,5 +26,5 @@ add_executable(file-retrieval-client
                src/file-retrieval-client.cpp
                src/ClientAppInterface.cpp
                src/ClientProcessingEngine.cpp)
-target_link_libraries(file-retrieval-server zmq)
-target_include_directories(file-retrieval-server PUBLIC include)
+target_link_libraries(file-retrieval-client zmq)
+target_include_directories(file-retrieval-client PUBLIC include)

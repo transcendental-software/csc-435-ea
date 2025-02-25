@@ -2,7 +2,6 @@ package csc435.app;
 
 import java.lang.System;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class ServerAppInterface {
     private ServerProcessingEngine engine;

@@ -6,7 +6,7 @@ class BenchmarkWorker implements Runnable {
     // TO-DO keep track of a ClientProcessingEngine object
     private String datasetPath;
 
-    pubic BenchmarkWorker(String datasetPath) {
+    public BenchmarkWorker(String datasetPath) {
         this.datasetPath = datasetPath;
     }
 
