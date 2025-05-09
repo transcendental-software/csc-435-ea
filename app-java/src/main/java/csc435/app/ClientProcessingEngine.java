@@ -41,7 +41,7 @@ public class ClientProcessingEngine {
 
     public ClientProcessingEngine() { }
 
-    public IndexResult indexFiles(String folderPath) {
+    public IndexResult indexFolder(String folderPath) {
         IndexResult result = new IndexResult(0.0, 0);
         // TO-DO get the start time
         // TO-DO crawl the folder path and extrac all file paths
@@ -56,7 +56,7 @@ public class ClientProcessingEngine {
         return result;
     }
     
-    public SearchResult searchFiles(ArrayList<String> terms) {
+    public SearchResult search(ArrayList<String> terms) {
         SearchResult result = new SearchResult(0.0, new ArrayList<DocPathFreqPair>());
         // TO-DO get the start time
         // TO-DO prepare a SEARCH REQUEST message that includes the search terms and send it to the server
@@ -76,7 +76,7 @@ public class ClientProcessingEngine {
     public void connect(String serverIP, String serverPort) {
         // TO-DO initialize the ZMQ context
         // TO-DO create the request socket and connect it to the server
-        // send a REGISTER request message and receive a REGISTER reply message with the client ID
+        // send a REGISTER REQUEST message and receive a REGISTER reply message with the client ID
     }
 
     public void disconnect() {
