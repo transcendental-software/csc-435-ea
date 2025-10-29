@@ -1,4 +1,4 @@
-## CSC 435 Extra Credit Assignment (Spring 2025)
+## CSC 435 Extra Credit Assignment (Fall 2025)
 **Jarvis College of Computing and Digital Media - DePaul University**
 
 **Student**: TO-DO-write-student-name (TO-DO-write-email-address)  
